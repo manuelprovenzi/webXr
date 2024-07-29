@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Scena VR con A-Frame</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <!-- Aggiungi una skybox -->
+      <a-sky color="#ECECEC"></a-sky>
+
+      <!-- Aggiungi una camera -->
+      <a-entity camera look-controls wasd-controls position="0 1.6 0"></a-entity>
+
+      <!-- Aggiungi una luce -->
+      <a-light type="ambient" color="#445451"></a-light>
+      <a-light type="point" intensity="2" position="2 4 4"></a-light>
+
+      <!-- Aggiungi una scatola -->
+      <a-box position="0 1 -5" rotation="0 45 0" color="#4CC3D9"></a-box>
+
+      <!-- Aggiungi una sfera -->
+      <a-sphere position="1 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
+
+      <!-- Aggiungi un cilindro -->
+      <a-cylinder position="2 0.75 -5" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
+
+      <!-- Aggiungi un piano -->
+      <a-plane rotation="-90 0 0" width="20" height="20" color="#7BC8A4"></a-plane>
+    </a-scene>
+  </body>
+</html>
