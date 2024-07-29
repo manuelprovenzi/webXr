@@ -21,7 +21,11 @@
     <a-scene>
       <a-sky color="#ECECEC"></a-sky>
       
-      <a-entity camera look-controls wasd-controls position="0 1.6 0"></a-entity>
+      <a-entity camera look-controls position="0 1.6 0">
+        <!-- Aggiungi il cursore per i click -->
+        <a-cursor></a-cursor>
+      </a-entity>
+      
       
       <a-light type="ambient" color="#445451"></a-light>
       <a-light type="point" intensity="2" position="2 4 4"></a-light>
